@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 header {
     padding-top: 16px;
     background-color: rgb(9, 9, 71);
@@ -12,7 +16,6 @@ header {
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -31,6 +34,7 @@ nav {
     padding: 16px 0;
     background-color: rgb(53, 53, 161);
     width: 100%;
+    display: none;
 }
 
 nav li {
@@ -50,6 +54,7 @@ nav li a {
 
 .menu-hamburguer {
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
@@ -58,4 +63,94 @@ nav li a {
     background-color: white;
     display: block;
     margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li button {
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+    background-color: rgb(35, 106, 35);
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.lista-veiculos li button:hover {
+    background-color: rgb(27, 81, 27);
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.price {
+    margin: 8px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, 
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
 }
