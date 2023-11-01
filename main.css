@@ -9,15 +9,27 @@ html {
     overflow-x: hidden;
 }
 
-header {
+header, footer {
     padding-top: 16px;
     background-color: rgb(9, 9, 71);
     color: #fff;
 }
 
-header > .container {
+header > .container, 
+footer > .container {
     justify-content: space-between;
     align-items: center;
+}
+
+footer > .container {
+    padding-bottom: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header h1 {
@@ -100,7 +112,7 @@ section h2 {
     max-width: 100%;
 }
 
-.lista-veiculos li button {
+button {
     display: block;
     padding: 8px 0;
     width: 100%;
@@ -145,6 +157,7 @@ section h2 {
 
 .form-campo input, 
 .form-campo textarea {
+    max-width: 480px;
     width: 100%;
     display: block;
     padding: 8px;
@@ -153,4 +166,22 @@ section h2 {
 .form-campo textarea {
     resize: none;
     height: 120px;
+}
+
+#botao-enviar {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
 }
